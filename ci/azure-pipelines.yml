@@ -12,7 +12,7 @@ jobs:
     vmImage: 'ubuntu-latest'
   container: rust:1.55.0-buster
   steps:
-  - script: rust component add rustfmt
+  - script: rustup component add rustfmt
     displayName: Install rustfmt
 
   - script: cargo fmt --all -- --check
